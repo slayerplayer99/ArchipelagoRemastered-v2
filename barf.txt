@@ -1,0 +1,26 @@
+
+Tribes = list(object(".0"))
+	.0
+		type = /datum/tribe
+		name = "Yarg"
+		memberList = list(object(".0"))
+			.0
+				type = /datum/tribeMember
+				name = "GauHelldragon"
+				rank = 4
+Things = list(object(".0"),object(".1"),object(".2"))
+	.0
+		type = /obj/item/seed/Corn_Seeds
+		x = 73
+		y = 32
+		z = 2
+	.1
+		type = /obj/item/seed/Corn_Seeds
+		x = 74
+		y = 32
+		z = 2
+	.2
+		type = /obj/item/seed/Potato_Seeds
+		x = 73
+		y = 33
+		z = 2

@@ -1,0 +1,122 @@
+// DM Environment file for farming_module.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "graphics"
+#define FILE_DIR "graphics/building"
+#define FILE_DIR "graphics/farming"
+#define FILE_DIR "graphics/fish"
+#define FILE_DIR "graphics/items"
+#define FILE_DIR "graphics/metalwork"
+#define FILE_DIR "graphics/tools"
+// END_FILE_DIR
+
+
+#define MESSAGE_HUNGER		1
+#define MESSAGE_THIRST		2
+#define MESSAGE_SEARCHING	3
+#define MESSAGE_PLUCKING	4
+#define MESSAGE_DOOR		5
+#define MESSAGE_CONTAINER	6
+#define MESSAGE_COMBINING	7
+#define MESSAGE_SWIMMING	8
+#define MESSAGE_DRINKING	9
+#define MESSAGE_CRAFTING	10
+#define MESSAGE_FISHING		11
+#define MESSAGE_COOKING		12
+#define MESSAGE_FARMING		13
+#define MESSAGE_GEOGRAPHY	14
+#define MESSAGE_BUILDING	15
+#define MESSAGE_LUMBERJACK	16
+#define MESSAGE_WATERING	17
+#define MESSAGE_FIRE 		18
+#define MESSAGE_EATING		19
+#define MESSAGE_ALCHEMY		20
+#define MESSAGE_MINING		21
+#define	MESSAGE_SMITHING	22
+#define MESSAGE_SMELTING	23
+#define MESSAGE_COMBAT		24
+
+#define	SKILL_BUILDING	1
+#define SKILL_CRAFTING  2
+#define SKILL_SMITHING	3
+#define SKILL_MINING	4
+#define SKILL_FARMING	5
+#define SKILL_ALCHEMY	6
+#define SKILL_FISHING	7
+#define SKILL_SWIMMING	8
+#define SKILL_LUMBERJACK	9
+#define SKILL_COOKING	10
+#define SKILL_COMBAT	11
+
+#define MAX_SKILLS 11
+
+#define FAILURE_XP_BOOST 2.0
+
+#define COOKED_GOOD 1
+#define COOKED_BURNT 2
+
+#define IQ_MAKE 1
+#define IQ_FIND 2
+
+#define	IRON	1
+#define	BRONZE	2
+#define STEEL	4
+#define BRASS	8
+
+#define MY_TURF_LAYER 5
+#define MY_OBJ_LAYER 15
+#define MY_MOB_LAYER 25
+
+#define CONTENTS_WATER 1
+#define CONTENTS_MILK 2
+#define CONTENTS_COCONUT 3
+
+
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "alchemy_module.dm"
+#include "building_module.dm"
+#include "buildings_module.dm"
+#include "chests_module.dm"
+#include "cleanup_module.dm"
+#include "combat_module.dm"
+#include "combination_module.dm"
+#include "containers_module.dm"
+#include "cooking_module.dm"
+#include "crafting_module.dm"
+#include "farming_module.dm"
+#include "fire_module.dm"
+#include "fishing_module.dm"
+#include "food_module.dm"
+#include "health_module.dm"
+#include "intelegence_module.dm"
+#include "items_module.dm"
+#include "lighting_module.dm"
+#include "maps_module.dm"
+#include "messages_module.dm"
+#include "minimap_module.dm"
+#include "mining_module.dm"
+#include "mobs_module.dm"
+#include "searching_module.dm"
+#include "skills_module.dm"
+#include "smelting_module.dm"
+#include "smithing_module.dm"
+#include "swimming_module.dm"
+#include "temp_stuff.dm"
+#include "trees_module.dm"
+#include "tribes_module.dm"
+#include "turfs_module.dm"
+#include "world_module.dm"
+#include "skin.dmf"
+#include "islands.dmm"
+#include "macros.dms"
+// END_INCLUDE
+
