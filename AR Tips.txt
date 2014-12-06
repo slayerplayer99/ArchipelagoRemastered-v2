@@ -1,6 +1,0 @@
-loc 240,99 | 100, 153
-Corn + Humus = Rice + Humus = Cotton + Algae = Fern + Vegetable Matter = Mushroom + Vegetable Matter
-Potato + Humus = Wheat + Algae = Shrubs + Vegetable Matter = Banana
-Many Logs + Nails = Boat
-Bundle Branches + Vine = Raft
-Log + Knife = Canoe
