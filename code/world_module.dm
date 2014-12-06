@@ -3,7 +3,7 @@ turf/layer = MY_TURF_LAYER
 obj/layer = MY_OBJ_LAYER
 
 
-
+////////////
 mob/debugger
 	verb/Send_Location(mob/M in world,X as num,Y as num)
 		set category = "Powers"
