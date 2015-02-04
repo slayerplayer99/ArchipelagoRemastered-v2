@@ -65,7 +65,6 @@ obj/Button
 					return
 
 
-
 			world.removePlayerFromTribe(usr.name)
 
 			fdel("saves/[usr.key]")
