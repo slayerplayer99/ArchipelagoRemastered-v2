@@ -1,3 +1,5 @@
+// TODO: improve tribe function, clean code
+
 #define	TRIBE_RANK_INITIATE	1
 #define TRIBE_RANK_MEMBER	2
 #define TRIBE_RANK_COUNCIL	3

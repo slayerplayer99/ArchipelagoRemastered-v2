@@ -1,5 +1,5 @@
 
-
+// TODO: Move to appropriate file location. (world.dm)?
 
 
 mob
