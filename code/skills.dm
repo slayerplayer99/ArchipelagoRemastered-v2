@@ -127,6 +127,9 @@ mob/player
 			if ( Effect_Type == EFFECT_SKILL )
 				level++
 
+
+			// TODO: add istype for other skills, like combat
+
 			if ( equipped )
 				if ( skill == SKILL_MINING )
 					level += equipped.bonus

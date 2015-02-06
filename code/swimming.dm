@@ -1,3 +1,5 @@
+// todo: implement skill roll in swimming
+
 #define SWIM_XP	5
 #define SWIM_TIME 8
 #define RAFT_TIME 5
