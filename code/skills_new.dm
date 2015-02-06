@@ -81,7 +81,7 @@ mob
 				skillList.Add(fishing)
 				skillList.Add(swimming)
 				skillList.Add(lumberjack)
-			/*getSkillName(skillName)
+			getSkillName(skillName)
 				switch ( skillName )
 					if ( SKILL_BUILDING )	return "Building"
 					if ( SKILL_CRAFTING )	return "Crafting"
@@ -93,11 +93,11 @@ mob
 					if ( SKILL_SWIMMING )	return "Swimming"
 					if ( SKILL_LUMBERJACK )	return "Lumberjack"
 					if ( SKILL_COOKING )	return "Cooking"
-					if ( SKILL_COMBAT )		return "Combat"*/
+					if ( SKILL_COMBAT )		return "Combat"
 			getSkill(skillName)
 				return skillList[skillName]
 
 			addToPanel()
 				for (i=1,i<=skillList.len,i++)
-					statpanel("Skills",GetSkillName(skill),"[colour][GetSkill(skill)]")
+					statpanel("New_Skills",GetSkillName(skill),"[colour][GetSkill(skill)]")
 
