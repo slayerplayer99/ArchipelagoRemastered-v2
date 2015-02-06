@@ -89,6 +89,7 @@ mob/player/proc/Compensation_Skills()
 	GiveXP(skill,SKILL_XP_LEVEL_2,1)
 
 
+
 mob/player
 	var
 		mx="---"
