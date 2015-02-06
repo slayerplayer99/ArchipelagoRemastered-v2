@@ -1,28 +1,3 @@
-#define MESSAGE_HUNGER		1
-#define MESSAGE_THIRST		2
-#define MESSAGE_SEARCHING	3
-#define MESSAGE_PLUCKING	4
-#define MESSAGE_DOOR		5
-#define MESSAGE_CONTAINER	6
-#define MESSAGE_COMBINING	7
-#define MESSAGE_SWIMMING	8
-#define MESSAGE_DRINKING	9
-#define MESSAGE_CRAFTING	10
-#define MESSAGE_FISHING		11
-#define MESSAGE_COOKING		12
-#define MESSAGE_FARMING		13
-#define MESSAGE_GEOGRAPHY	14
-#define MESSAGE_BUILDING	15
-#define MESSAGE_LUMBERJACK	16
-#define MESSAGE_WATERING	17
-#define MESSAGE_FIRE 		18
-#define MESSAGE_EATING		19
-#define MESSAGE_ALCHEMY		20
-#define MESSAGE_MINING		21
-#define	MESSAGE_SMITHING	22
-#define MESSAGE_SMELTING	23
-#define MESSAGE_COMBAT		24
-
 
 atom/proc/Public_message(mes,mesType)
 	for ( var/mob/player/player in viewers(world.view,src) )

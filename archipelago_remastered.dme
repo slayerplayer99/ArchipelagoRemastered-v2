@@ -110,7 +110,6 @@
 #include "code\smelting.dm"
 #include "code\smithing.dm"
 #include "code\swimming.dm"
-#include "code\temp_stuff.dm"
 #include "code\trees.dm"
 #include "code\tribes.dm"
 #include "code\turfs.dm"
