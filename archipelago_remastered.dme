@@ -107,7 +107,6 @@
 #include "code\mobs.dm"
 #include "code\searching.dm"
 #include "code\skills.dm"
-#include "code\skills_new.dm"
 #include "code\smelting.dm"
 #include "code\smithing.dm"
 #include "code\swimming.dm"
@@ -118,5 +117,6 @@
 #include "code\world.dm"
 #include "map\intro_screen.dmm"
 #include "map\islands.dmm"
+#include "script macro\macros.dms"
 // END_INCLUDE
 
