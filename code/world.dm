@@ -108,7 +108,7 @@ mob/player
 		usr<<browse('guide.html')
 world
 	hub = "GauHelldragon.ArchipelagoRemastered"
-	name = "AR - Slayerplayer99's Server"
+	name = "Archipelago Remastered"
 	view = 5
 	New()
 		loading = 0
