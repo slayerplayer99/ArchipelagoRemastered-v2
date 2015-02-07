@@ -107,6 +107,7 @@
 #include "code\mobs.dm"
 #include "code\searching.dm"
 #include "code\skills.dm"
+#include "code\skills_new.dm"
 #include "code\smelting.dm"
 #include "code\smithing.dm"
 #include "code\swimming.dm"
