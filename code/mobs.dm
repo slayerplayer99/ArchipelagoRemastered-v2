@@ -12,17 +12,17 @@ obj/dead_corpse
 				spawn(3600)
 				new/mob/AI/animal/Hog(src.loc)
 	//			spawn(1)
-	//			del src
+				del src
 mob/AI/animal
 	New()
 		.=..()
 		spawn(5)
 		Wander()
-	Bump(mob/player/M)
+/*	Bump(mob/player/M)
 		if(M.client)
 			mattack(M)
 		else
-			return ..()
+			return ..()*/
 
 	var
 		health=7.5
@@ -74,11 +74,11 @@ mob/AI/animal
 			while(src)
 				step_rand(src,4)
 				sleep(7)
-				if(M in oview(3))
+				/*if(M in oview(3))
 					step_towards(src,M)
-				else
-					for(M in view(src))
-						break
+				else*/
+				for(M in view(src))
+					break
 				sleep(7)
 			spawn(7)
 				Wander()
