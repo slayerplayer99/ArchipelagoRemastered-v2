@@ -7,6 +7,7 @@
 
 turf/Cave/DblClick()
 
+	// Checks to see if the player is ready to mine
 	var equip = usr:getEquipedItem()
 	if ( !equip )
 		return ..()
@@ -18,16 +19,20 @@ turf/Cave/DblClick()
 		return
 
 
+	// Begins mining procedure
 	usr:Public_message("[usr] starts mining away at the rock.",MESSAGE_MINING)
 	usr:setBusy(1)
+	// Possibly make mining speed dynamic?
 	sleep(MINE_SPEED)
 	if ( !usr )	return
 	usr:setBusy(0)
 
 	var chance = AdjustChance( 13 + ( 7 * usr:GetSkill(SKILL_MINING) ) )
 
+	// Gets the ore that will be found prior to the chance running
 	var datum/oreFind/OF = GetOF(usr)
 
+	// If the chance roll is successful
 	if ( prob(chance) )
 
 		var obj/item/newOre = new OF.ore(src)
@@ -41,12 +46,16 @@ turf/Cave/DblClick()
 		usr:CheckIQ(IQ_FIND,newOre)
 		usr:GiveXP(SKILL_MINING,OF.findChance * 3 )
 
+	// Failure message of chance
 	else
 		gameMessage(usr,"You don't find anything.",MESSAGE_MINING)
 		usr:GiveXP(SKILL_MINING,5)
 
 
-
+/*
+	Pulls an apporpriate ore from a list of ores that fits the player's skill level, and then
+	returns this ore variable.
+*/
 turf/Cave/proc/GetOF(mob/player/miner)
 	var mineSkill = miner.GetSkill(SKILL_MINING)
 
@@ -64,13 +73,13 @@ turf/Cave/proc/GetOF(mob/player/miner)
 
 	return pick(OFlist)
 
-
+// initialization of the ore list
 var/list/OreList = new()
 world/proc/InititlizeOreList()
 	for ( var/oretype in ( typesof(/datum/oreFind) - /datum/oreFind ) )
 		OreList += new oretype
 
-
+// initialization of the skills required to mine the ores
 datum/oreFind
 	var
 		ore
@@ -99,7 +108,7 @@ datum/oreFind
 		minSkill = 7
 
 
-
+// initialization of the ore objects
 obj/item/ore
 //	var/smeltSkill
 

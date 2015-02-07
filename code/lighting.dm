@@ -253,7 +253,7 @@ world
 		TimeLoop()
 			while (1)
 				sleep(DAY_LENGTH)
-				setNight()
+				//setNight()
 				//CheckTribes()
 				sleep(NIGHT_LENGTH)
 				setDay()

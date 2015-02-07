@@ -1,6 +1,5 @@
 #define SEARCH_TIME	27
 
-
 turf/proc/Find()
 turf/verb/Search()
 	set src in view(0)

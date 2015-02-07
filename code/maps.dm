@@ -64,8 +64,7 @@ obj/Button
 				if ( responce == "Nevermind")
 					return
 
-
-
+			//New player creation
 			world.removePlayerFromTribe(usr.name)
 
 			fdel("saves/[usr.key]")

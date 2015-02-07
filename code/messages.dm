@@ -7,7 +7,7 @@ proc/gameMessage(mob/target,mes,mesType)
 	if ( mesType )
 		var colour = getMessageColour(mesType)
 		var mesName = getMessageName(mesType)
-		target << output("<FONT COLOR=[colour]><B>\[Game - [mesName]]</B> [mes]","act")
+		target << "<FONT COLOR=[colour]>(Game - [mesName]) [mes]"
 	else
 		target << mes
 proc

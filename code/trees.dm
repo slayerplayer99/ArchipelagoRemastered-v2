@@ -17,7 +17,9 @@ obj
 		var
 			vineleft=MAX_VINE
 		verb
+			// plucks vine from vine wall
 			Pluck_Vine()
+				// if you're not busy it moves onward
 				set src in view(1)
 				set category = "Survival"
 				if ( usr:isBusy() )
@@ -26,6 +28,7 @@ obj
 					usr << "This moss wall has no vine left."
 					return
 
+				// simple creation of new object after plucking the vine
 				usr.Public_message("[usr] starts plucking from moss wall.",MESSAGE_PLUCKING)
 
 				usr:setBusy(1)
@@ -41,6 +44,7 @@ obj
 				vineleft-=1
 				usr:CheckIQ(IQ_FIND,v)
 		proc
+			// regrowth of the vinetree
 			NewDay()
 				vineleft += VINE_GROWTH
 				if ( vineleft > MAX_VINE )

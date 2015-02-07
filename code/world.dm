@@ -89,6 +89,7 @@ mob/player/proc/Compensation_Skills()
 	GiveXP(skill,SKILL_XP_LEVEL_2,1)
 
 
+
 mob/player
 	var
 		mx="---"
@@ -107,7 +108,7 @@ mob/player
 		usr<<browse('guide.html')
 world
 	hub = "GauHelldragon.ArchipelagoRemastered"
-	name = "AR - Slayerplayer99's Server"
+	name = "Archipelago Remastered"
 	view = 5
 	New()
 		loading = 0
@@ -167,6 +168,8 @@ mob/player/verb
 	Say(message as text)
 		view()<< "<B><font color=teal>{[timestamp()]}</font color></B><font color=blue>[src] says : </font>[html_encode(message)]"
 	World_Say(message as text)
+		if (message == "")
+			return
 		for ( var/mob/player/PC in world.contents )
 			PC << "<B><font color=teal>{[timestamp()]}</font color></B><font color=red>[src] says : </font>[html_encode(message)]"
 	Who()
@@ -414,3 +417,48 @@ proc/timestamp()
 			suffix="AM"
 
 	return("[hour]:[minsec] [suffix]")
+
+
+
+mob
+	player
+		icon = 'People.dmi'
+
+		var
+			tmp/isActing
+			obj/item/tool/equipped
+
+		Move()
+			if ( health <= 0 )
+				setBusy(1)
+				return 0
+
+			if ( isActing )
+				return 0
+
+			var ret = ..()
+			if ( ret )
+				UpdateMiniMap()
+			return ret
+
+/*		verb
+			SetDay()
+				set category = "Debug"
+				island.luminosity = 1
+			SetNight()
+				set category = "Debug"
+				island.luminosity = 0*/
+
+
+		proc
+			isBusy()
+				if ( health <= 0 )
+					return 1
+
+				return isActing
+			setBusy(busy)
+				isActing = busy
+
+
+			getEquipedItem()
+				return equipped
