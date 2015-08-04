@@ -82,6 +82,9 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "skin.dmf"
+#include "intro_screen.dmm"
+#include "islands.dmm"
 #include "code\alchemy_module.dm"
 #include "code\building_module.dm"
 #include "code\buildings_module.dm"
