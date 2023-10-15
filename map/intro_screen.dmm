@@ -1,4 +1,7 @@
 "a" = (/turf,/area/island)
+"b" = (/obj/Button/Start_New_Game,/turf,/area/island)
+"c" = (/obj/Button/Load,/turf,/area/island)
+"d" = (/turf/Title,/area/island)
 
 (1,1,1) = {"
 aaaaaaaaaaa
@@ -6,10 +9,10 @@ aaaaaaaaaaa
 aaaaaaaaaaa
 aaaaaaaaaaa
 aaaaaaaaaaa
+abaaaaaccca
+abaaaaaccca
 aaaaaaaaaaa
 aaaaaaaaaaa
 aaaaaaaaaaa
-aaaaaaaaaaa
-aaaaaaaaaaa
-aaaaaaaaaaa
+daaaaaaaaaa
 "}
