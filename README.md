@@ -18,3 +18,6 @@ git merge "name you chose"/master
             update your fork with this command
             
 git push origin master
+
+**NOTE 10/15/2023
+  Make sure to before compiling to check mark automatic FILE_DIR on in DreamMaker by going to Build -> Preferences to avoid directory(missing file errors).
